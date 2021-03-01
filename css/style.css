@@ -45,9 +45,11 @@ h4 {
   width: 40vw;
 }
 .form ul li {
+  box-sizing: content-box;
+  width: 20%;
+  border: solid transparent 1px;
   display: inline-block;
   background-color: rgb(58, 155, 58);
-  border-block: unset;
 }
 
 div p h1 {
