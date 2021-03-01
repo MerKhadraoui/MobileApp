@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../img/bg_001.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.menu {
+  padding-left: 50%;
+  width: 100vw;
+  height: 20vh;
+}
+#img {
+  margin-top: 10rem;
+  margin-left: 15rem;
+  width: 10rem;
+  height: 5rem;
+}
+.menu ul li {
+  display: inline-block;
+  padding-left: 5%;
+}
+.menu ul li a {
+  color: white;
+  text-decoration-line: none;
+}
+div {
+  width: 100vw;
+  height: 70vh;
+}
+#tx1,
+#tx2,
+div p,
+h1,
+h4 {
+  margin-left: 15rem;
+  color: white;
+  text-decoration-line: none;
+  white-space: pre-line;
+  width: 40vw;
+}
+.form ul li {
+  display: inline-block;
+  background-color: rgb(58, 155, 58);
+  border-block: unset;
+}
+
+div p h1 {
+  margin-top: 18rem;
+}
+#img1 {
+  margin-left: 70%;
+
+  width: 15rem;
+  height: 30rem;
+
+  position: absolute;
+  transition: 4s;
+  z-index: auto;
+  filter: grayscale(10%);
+}
+#img2 {
+  margin-left: 60%;
+  margin-top: 1%;
+  width: 15rem;
+  height: 30rem;
+
+  position: absolute;
+  transition: 5s;
+  z-index: auto;
+  filter: grayscale(10%);
+}
