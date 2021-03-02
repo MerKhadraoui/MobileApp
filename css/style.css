@@ -33,8 +33,7 @@ div {
   width: 100vw;
   height: 70vh;
 }
-#tx1,
-#tx2,
+
 div p,
 h1,
 h4 {
@@ -45,13 +44,14 @@ h4 {
   width: 40vw;
 }
 .form ul li {
-  box-sizing: content-box;
-  width: 20%;
-  border: solid transparent 1px;
-  display: inline-block;
-  background-color: rgb(58, 155, 58);
-}
+  margin-left: 15rem;
+  box-sizing: border-box;
+  width: 5rem;
 
+  background-color: rgb(13, 141, 19);
+  list-style: none;
+  display: inline-block;
+}
 div p h1 {
   margin-top: 18rem;
 }
