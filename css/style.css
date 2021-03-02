@@ -75,7 +75,7 @@ button {
   height: 30rem;
 
   position: absolute;
-  transition: 4s;
+  transition: 5s;
   z-index: auto;
   filter: grayscale(10%);
 }
@@ -86,7 +86,13 @@ button {
   height: 30rem;
 
   position: absolute;
-  transition: 5s;
+  transition: 6s;
   z-index: auto;
   filter: grayscale(10%);
+}
+a:hover,
+button:hover {
+  filter: grayscale(3%);
+  transform: scale(1.2);
+  cursor: pointer;
 }
