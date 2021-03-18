@@ -16,28 +16,65 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+section {
+  display: grid;
+  height: 90%;
+  width: 90%;
+  border: #e4e3e7 2px solid;
+  grid-template-columns: 6fr;
+  grid-template-rows: 5fr 5fr;
+  grid-template-areas:
+    "menu"
+    "body";
+}
+.main-menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: space-around;
+
+  flex-direction: row;
+}
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  flex-direction: column;
+}
+
+.body {
+  grid-area: body;
+}
+
+.hamburger div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 3rem;
+  height: 2rem;
+  border: 2px black solid;
+  flex-direction: row;
+}
+
+a {
+  text-orientation: none;
+}
 .menu {
-  padding-left: 50%;
-  width: 100vw;
-  height: 10vh;
+  background-color: rgba(112, 68, 68, 0.33);
+  width: 15vw;
+  height: 30vh;
+  display: none;
 }
 #img {
-  margin-top: 5rem;
-  margin-left: 15rem;
   width: 10rem;
   height: 5rem;
 }
 .menu ul li {
-  display: inline-block;
-  padding-left: 5%;
+  display: block;
 }
 .menu ul li a {
   color: white;
   text-decoration-line: none;
-}
-div {
-  width: 100vw;
-  height: 90vh;
 }
 
 div p,
