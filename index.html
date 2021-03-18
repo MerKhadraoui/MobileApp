@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-   
-   <section class="main-menu">
-    <div class="hamburger">
+   <main>
+   <div class=" div main-menu">
+      <div class="hamburger">
       <div></div>
       <div></div>
       <div></div>
-  </div>
-   <div class="menu" >
+    </div>
+    <div class="menu" >
     <ul >
       <li><a href="#">PRODUCTS</a></li>
       <li><a href="#">PRICES</a></li>
@@ -24,13 +24,13 @@
       <li><a href="#">LOGIN</a></li>
       <li><a href="#">SING UP</a></li>
     </ul>
-  </div>
+    </div>
  
-</section>
-<section class="image"> <div> <img id="img" src="./img/logo_001.png" alt="challenge" /></div></section>
+   </div>
+<div class="div image"> <img id="img" src="./img/logo_001.png" alt="challenge" /></div>
   
  
-   <section class="body">
+   <div class=" div body">
     <div class="form" >
       <img id="img1" src="./img/phone_001.png" alt="phone1" />
       <img id="img2" src="./img/phone_002.png" alt="phone2" /><br>
@@ -50,7 +50,8 @@
       </li></ul>
       
     </div>
-   </section>
+  </div>
+</main>
     <script>
       let clicked=false;
       document.querySelector('.hamburger').addEventListener('click',()=>{  console.log(clicked);

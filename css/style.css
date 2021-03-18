@@ -16,31 +16,41 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-section {
+@media only screen and (max-width: 600px) {
+  a:hover,
+  button:hover {
+    display: none;
+  }
+}
+main .div {
   display: grid;
   height: 90%;
   width: 90%;
-  gap: 2rem;
-  border: black 2px solid;
-  grid-template-rows:
+  grid-template-columns: 5fr;
+  grid-template-rows: 3fr 0.5fr 5fr;
+  /* grid-template-rows: 1fr repeat(2, 3fr) 1fr; */
+
+  /* row-gap: 5rem; */
+
+  border: red 2px solid;
+  grid-template-areas:
     "main-menu"
-    " image "
+    "image"
     "body";
 }
 .main-menu {
   grid-area: main-menu;
-  display: flex;
-  justify-content: left;
-
-  flex-direction: row;
 }
 .hamburger {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
+  background-color: rgb(139, 137, 137);
+  width: 4rem;
   height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-direction: column;
+  position: relative;
+  border-radius: 15%;
 }
 .image {
   grid-area: image;
@@ -54,35 +64,46 @@ section {
 .hamburger div {
   display: flex;
   justify-content: left;
-  width: 3rem;
-  height: 2rem;
-  border: 2px black solid;
+  width: 2rem;
+  height: 0.5rem;
+  background-color: rgb(88, 85, 85);
+  border-radius: 30%;
 }
 
 a {
   text-orientation: none;
 }
-.menu {
-  background-color: rgba(112, 68, 68, 0.33);
-  width: 15vw;
-  height: 30vh;
-  display: none;
+.menu ul {
+  background-color: rgba(68, 66, 66, 0.33);
+  width: 18rem;
+
+  border-radius: 10%;
 }
 #img {
   width: 10rem;
   height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu ul li {
-  display: block;
-}
-.menu ul li a {
-  color: white;
-  text-decoration-line: none;
 }
 
+.menu ul li {
+  background-color: gray;
+  margin-top: 2rem;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10%;
+  box-shadow: 10px 5px 5px rgb(65, 132, 177);
+}
+a {
+  font-size: 18px;
+  color: rgb(49, 47, 47);
+  text-decoration-line: none;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 div p,
 h1,
 h4 {
