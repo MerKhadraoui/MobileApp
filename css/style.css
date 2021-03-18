@@ -32,7 +32,7 @@ main .div {
 
   /* row-gap: 5rem; */
 
-  border: red 2px solid;
+  border: transparent 2px solid;
   grid-template-areas:
     "main-menu"
     "image"
@@ -40,6 +40,7 @@ main .div {
 }
 .main-menu {
   grid-area: main-menu;
+  padding: 1rem;
 }
 .hamburger {
   background-color: rgb(139, 137, 137);
@@ -93,7 +94,6 @@ a {
   justify-content: center;
   flex-direction: column;
   border-radius: 10%;
-  box-shadow: 10px 5px 5px rgb(65, 132, 177);
 }
 a {
   font-size: 18px;
@@ -154,9 +154,43 @@ button {
   z-index: auto;
   filter: grayscale(10%);
 }
-a:hover,
+
 button:hover {
   filter: grayscale(3%);
   transform: scale(1.2);
   cursor: pointer;
+}
+li:hover {
+  filter: grayscale(3%);
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow: 10px 5px 5px rgb(65, 132, 177);
+}
+.hamburger div {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-name: bounce;
+}
+@keyframes bounce {
+  from {
+    top: 1rem;
+  }
+  to {
+    bottom: 1rem;
+  }
+}
+
+.hamburger:hover .first {
+  display: none;
+}
+.hamburger:hover .thr {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  transform: rotate(-0.2turn);
+  position: absolute;
+}
+.hamburger:hover .sec {
+  display: none;
 }
