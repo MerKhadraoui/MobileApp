@@ -20,17 +20,17 @@ section {
   display: grid;
   height: 90%;
   width: 90%;
-  border: #e4e3e7 2px solid;
-  grid-template-columns: 6fr;
-  grid-template-rows: 5fr 5fr;
-  grid-template-areas:
-    "menu"
+  gap: 2rem;
+  border: black 2px solid;
+  grid-template-rows:
+    "main-menu"
+    " image "
     "body";
 }
 .main-menu {
-  grid-area: menu;
+  grid-area: main-menu;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
 
   flex-direction: row;
 }
@@ -42,18 +42,21 @@ section {
   height: 3rem;
   flex-direction: column;
 }
-
+.image {
+  grid-area: image;
+  padding-left: 30%;
+  /* */
+}
 .body {
   grid-area: body;
 }
 
 .hamburger div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
   width: 3rem;
   height: 2rem;
   border: 2px black solid;
-  flex-direction: row;
 }
 
 a {
@@ -68,6 +71,9 @@ a {
 #img {
   width: 10rem;
   height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu ul li {
   display: block;
