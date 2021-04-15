@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-image: url("../img/bg_001.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  a:hover,
+button:hover {
+    display: none;
+  }
+}
+main .div {
+  display: grid;
+  height: 90%;
+  width: 90%;
+  grid-template-columns: 5fr;
+  grid-template-rows: 3fr 0.5fr 5fr;
+  /* grid-template-rows: 1fr repeat(2, 3fr) 1fr; */
+  /* row-gap: 5rem; */
+  border: transparent 2px solid;
+  grid-template-areas: "main-menu" "image" "body";
+}
+
+.main-menu {
+  grid-area: main-menu;
+  padding: 1rem;
+}
+
+.hamburger {
+  background-color: rgba(139, 137, 137, 0.336);
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  border-radius: 15%;
+}
+
+.image {
+  grid-area: image;
+  padding-left: 30%;
+  /* */
+}
+
+.body {
+  grid-area: body;
+}
+
+.hamburger div {
+  display: flex;
+  justify-content: left;
+  width: 2rem;
+  height: 0.5rem;
+  background-color: #585555;
+  border-radius: 30%;
+}
+
+a {
+  text-orientation: none;
+}
+
+.menu ul {
+  background-color: rgba(68, 66, 66, 0.33);
+  width: 18rem;
+  border-radius: 10%;
+}
+
+#img {
+  width: 10rem;
+  height: 5rem;
+}
+
+.menu ul li {
+  background-color: gray;
+  margin-top: 2rem;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10%;
+}
+
+a {
+  font-size: 18px;
+  color: #312f2f;
+  text-decoration-line: none;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div p,
+h1,
+h4 {
+  margin-left: 15rem;
+  color: white;
+  text-decoration-line: none;
+  white-space: pre-line;
+  width: 40vw;
+}
+
+form {
+  margin-top: 3rem;
+  margin-left: 20rem;
+}
+
+button {
+  height: 4rem;
+  width: 12rem;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5%;
+  padding: 10px;
+  margin: 5px;
+}
+
+#tx1 {
+  background-color: #29be56;
+}
+
+#tx2 {
+  background-color: #3498db;
+}
+
+#img1 {
+  margin-left: 70%;
+  width: 15rem;
+  height: 30rem;
+  position: absolute;
+  transition: 5s;
+  z-index: auto;
+  filter: grayscale(10%);
+}
+
+#img2 {
+  margin-left: 60%;
+  margin-top: 1%;
+  width: 15rem;
+  height: 30rem;
+  position: absolute;
+  transition: 6s;
+  z-index: auto;
+  filter: grayscale(10%);
+}
+
+button:hover {
+  filter: grayscale(3%);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+li:hover {
+  filter: grayscale(3%);
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow: 10px 5px 5px #4184b1;
+}
+
+.hamburger div {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-name: bounce;
+}
+
+@keyframes bounce {
+  from {
+    top: 1rem;
+  }
+  to {
+    bottom: 1rem;
+  }
+}
+.hamburger:hover .first {
+  display: none;
+}
+
+.hamburger:hover .thr {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  transform: rotate(-0.2turn);
+  position: absolute;
+}
+
+.hamburger:hover .sec {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
