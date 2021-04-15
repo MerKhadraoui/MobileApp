@@ -1,16 +1,15 @@
 main div {
-  main .div {
-    display: grid;
-    height: $main-div-size;
-    width: $main-div-size;
-    grid-template-columns: 5fr;
-    grid-template-rows: 3fr 0.5fr 5fr;
-    border: transparent 2px solid;
-    grid-template-areas:
-      "main-menu"
-      "image"
-      "body";
-  }
+  display: grid;
+  height: $main-div-size;
+  width: $main-div-size;
+  grid-template-columns: 5fr;
+  grid-template-rows: 3fr 0.5fr 5fr;
+  border: transparent 2px solid;
+  grid-template-areas:
+    "main-menu"
+    "image"
+    "body";
+
   .main-menu {
     grid-area: main-menu;
     padding: 1rem;
@@ -33,6 +32,19 @@ main div {
       background-color: rgb(88, 85, 85);
       border-radius: 30%;
     }
+    &:hover .first {
+      display: none;
+    }
+    &:hover .thr {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 100%;
+      transform: rotate(-0.2turn);
+      position: absolute;
+    }
+    &:hover .sec {
+      display: none;
+    }
   }
 
   a {
@@ -43,22 +55,22 @@ main div {
     width: 18rem;
 
     border-radius: 10%;
+    &li {
+      background-color: gray;
+      margin-top: 2rem;
+      width: 85%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 10%;
+    }
   }
   #img {
     width: 10rem;
     height: 5rem;
   }
 
-  .menu ul li {
-    background-color: gray;
-    margin-top: 2rem;
-    width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10%;
-  }
   a {
     font-size: 18px;
     color: rgb(49, 47, 47);
@@ -81,19 +93,5 @@ main div {
     to {
       bottom: 1rem;
     }
-  }
-
-  .hamburger:hover .first {
-    display: none;
-  }
-  .hamburger:hover .thr {
-    height: 2rem;
-    width: 2rem;
-    border-radius: 100%;
-    transform: rotate(-0.2turn);
-    position: absolute;
-  }
-  .hamburger:hover .sec {
-    display: none;
   }
 }
