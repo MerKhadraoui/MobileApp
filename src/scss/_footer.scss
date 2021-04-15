@@ -1,0 +1,62 @@
+div p,
+h1,
+h4 {
+  margin-left: 15rem;
+  color: white;
+  text-decoration-line: none;
+  white-space: pre-line;
+  width: 40vw;
+}
+form {
+  margin-top: 3rem;
+  margin-left: 20rem;
+}
+button {
+  height: 4rem;
+  width: 12rem;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5%;
+  padding: 10px;
+  margin: 5px;
+}
+#tx1 {
+  background-color: #29be56;
+}
+#tx2 {
+  background-color: #3498db;
+}
+#img1 {
+  margin-left: 70%;
+  width: 15rem;
+  height: 30rem;
+
+  position: absolute;
+  transition: 5s;
+  z-index: auto;
+  filter: grayscale(10%);
+}
+#img2 {
+  margin-left: 60%;
+  margin-top: 1%;
+  width: 15rem;
+  height: 30rem;
+
+  position: absolute;
+  transition: 6s;
+  z-index: auto;
+  filter: grayscale(10%);
+}
+
+button:hover {
+  filter: grayscale(3%);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+li:hover {
+  filter: grayscale(3%);
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow: 10px 5px 5px rgb(65, 132, 177);
+}
