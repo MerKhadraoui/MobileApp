@@ -29,15 +29,15 @@ main div {
       justify-content: left;
       width: 2rem;
       height: 0.5rem;
-      background-color: rgb(88, 85, 85);
+      background-color: $hamburger-menu-size;
       border-radius: 30%;
     }
     &:hover .first {
       display: none;
     }
     &:hover .thr {
-      height: 2rem;
-      width: 2rem;
+      height: 1rem;
+      width: 1rem;
       border-radius: 100%;
       transform: rotate(-0.2turn);
       position: absolute;
@@ -51,14 +51,14 @@ main div {
     text-orientation: none;
   }
   .menu ul {
-    background-color: rgba(68, 66, 66, 0.33);
-    width: 18rem;
+    background-color: $hamburger-menuUl-color;
+    width: $hamburger-menuUl-size;
 
     border-radius: 10%;
     &li {
       background-color: gray;
       margin-top: 2rem;
-      width: 85%;
+      width: $hamburger-menuUl-size;
       display: flex;
       align-items: center;
       justify-content: center;
